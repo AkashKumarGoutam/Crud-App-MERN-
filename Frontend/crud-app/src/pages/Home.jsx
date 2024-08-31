@@ -42,7 +42,7 @@ function Home() {
         <tbody className="table-group-divider">
           {users.map((ele, index) => (
             <tr key={index}>
-              <td>{ele.name}</td>
+              <td>{ele.name}</td> 
               <td>{ele.email}</td>
               <td>{ele.age}</td>
               <td>

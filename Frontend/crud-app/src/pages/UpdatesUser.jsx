@@ -9,15 +9,15 @@ function UpdatesUser() {
   const [age , setAge] = useState();
   const navigate =useNavigate();
 
-  useEffect(() => {
-    axios.get("http://localhost:3001/getUser/" +id )
-    .then(result=>{
-      console.log(result.data)
-      setName(result.data.name)
-      setEmail(result.data.email)
-      setAge(result.data.age)
-    })
-  }, [])
+    useEffect(() => {
+      axios.get("http://localhost:3001/getUser/" +id )
+      .then(result=>{
+        console.log(result.data)
+        setName(result.data.name)
+        setEmail(result.data.email)
+        setAge(result.data.age)
+      })
+    }, [])
 
 
 
